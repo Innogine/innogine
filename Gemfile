@@ -41,6 +41,10 @@ gem 'bootsnap'
 
 gem 'activesupport', '5.2.1'
 
+# Argon Design System Dependancies
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+
 group :development do
   gem 'listen', '~> 3.0.5'
 end

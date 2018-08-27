@@ -21,8 +21,11 @@ module Innogine
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
-
-    # Settings in config/environments/* take precedence over those specified here.
+    #config.assets.paths << Rails.root.join('node_modules')
+    # Adding Webfonts to the Asset Pipeline
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    # config.assets.paths << Rails.root.join('node_modules', 'argon-design-system-free', 'dist')    # Settings in config/environments/* take precedence over those specified here.
+    # config.browserify_rails.commandline_options = '-t coffeeify --extension=".js.coffee"'
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
