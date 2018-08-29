@@ -12,6 +12,7 @@
  *
  *= require nucleo.css
  *= require nucleo-svg.css
+ *= require argon/argon.css.scss
  *= require_tree .
  *= require_self
  *= require font-awesome
@@ -25,6 +26,6 @@
     font-style: normal;
   }
 
-  @custom-logo {
-    font-size: 3rem;
-  }
+.nav-spacer {
+
+}
