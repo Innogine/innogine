@@ -12978,6 +12978,11 @@ button.bg-lighter:focus
     background-color: #cbd3da !important;
 }
 
+.bg-gradient-innogine
+{
+    background: linear-gradient(-269deg, #1674CC 22%, #3991F0 78%) !important;
+}
+
 .bg-gradient-primary
 {
     background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;
@@ -15157,7 +15162,7 @@ a.btn-icon-only
 {
     padding: 3rem 0; 
 
-    background: #f4f5f7;
+    background: linear-gradient(0deg, #1674CC 44%, #3991F0 100%);
 }
 .footer .col-footer .heading
 {
@@ -15542,7 +15547,7 @@ textarea[resize='horizontal']
 .icon-shape-innoblack
 {
     color: #000C12;
-    background-color: rgba(12, 18, 100, .5);
+    background-color: rgba(0, 12, 18, .5);
 }
 
 .icon-shape-info
@@ -17431,6 +17436,11 @@ textarea[resize='horizontal']
         height: 90px;
     }
 }
+
+.section-shaped .shape-style-1.shape-innogine
+{
+    background: linear-gradient(0deg, #1674CC 44%, #3991F0 100%);
+}
 .section-shaped .shape-style-1.shape-primary
 {
     background: linear-gradient(150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
@@ -17864,8 +17874,9 @@ p
 .display-3 span,
 .display-4 span
 {
-    font-weight: 300; 
-
+    font-weight: 400; 
+    font-size: 75%;
+    color: #000C12;
     display: block;
 }
 
@@ -18216,7 +18227,7 @@ article h5 + figure
     padding-top: .5rem;
     padding-bottom: .5rem;
 
-    background-color: #172b4d !important;
+    background-color: #1674CC !important;
     box-shadow: 0 1px 10px rgba(130, 130, 134, .1);
 }
 
