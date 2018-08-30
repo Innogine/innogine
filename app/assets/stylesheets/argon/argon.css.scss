@@ -7925,6 +7925,12 @@ button.close
     vertical-align: text-top !important;
 }
 
+.bg-innogine-light
+{
+    background-image: image-url("innogine-office.jpg") !important; 
+    background-color: rgba(136, 185, 230, 0.5) !important;
+}
+
 .bg-primary
 {
     background-color: #5e72e4 !important;
@@ -7942,6 +7948,7 @@ button.bg-primary:focus
 {
     background-color: #f4f5f7 !important;
 }
+
 
 a.bg-secondary:hover,
 a.bg-secondary:focus,
