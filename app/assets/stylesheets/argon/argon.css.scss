@@ -3298,6 +3298,15 @@ fieldset:disabled a.btn
     background-color: #172b4d;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
+
+.btn-innogine
+{
+    color: #fff;
+    border-color: #2D8CE9;
+    background-color: #2D8CE9;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
 .btn-default:hover
 {
     color: #fff;
@@ -5187,7 +5196,7 @@ input[type='button'].btn-block
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link
 {
-    color: #525f7f;
+    color: #2D8CE9;
     border-color: #dee2e6 #dee2e6 #fff; 
     background-color: #fff;
 }
@@ -5208,7 +5217,7 @@ input[type='button'].btn-block
 .nav-pills .show > .nav-link
 {
     color: #fff;
-    background-color: #5e72e4;
+    background-color: #2D8CE9;
 }
 
 .nav-fill .nav-item
@@ -5706,6 +5715,8 @@ input[type='button'].btn-block
     border-radius: .25rem; 
     background-color: #fff;
     background-clip: border-box;
+
+    margin-top: 25px;
 }
 .card > hr
 {
@@ -9461,6 +9472,12 @@ button.bg-darker:focus
 
 .shadow,
 .profile-page .card-profile .card-profile-image img
+{
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+}
+
+.shadow,
+.card-profile .card-profile-image img
 {
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
@@ -14775,10 +14792,23 @@ a.btn-icon-only
 {
     margin-top: -150px;
 }
+
+.card-profile
+{
+    margin-top: -15
+
+}
+
 .profile-page .card-profile .card-profile-image
 {
     position: relative;
 }
+
+.card-profile .card-profile-image
+{
+    position: relative;
+}
+
 .profile-page .card-profile .card-profile-image img
 {
     position: absolute;
@@ -14791,7 +14821,25 @@ a.btn-icon-only
 
     border-radius: .25rem;
 }
+
+.card-profile .card-profile-image img
+{
+    position: absolute;
+    left: 50%;
+
+    max-width: 180px;
+
+    transition: all .15s ease; 
+    transform: translate(-50%, -30%);
+
+    border-radius: .25rem;
+}
+
 .profile-page .card-profile .card-profile-image img:hover
+{
+    transform: translate(-50%, -33%);
+}
+.card-profile .card-profile-image img:hover
 {
     transform: translate(-50%, -33%);
 }
@@ -14799,6 +14847,12 @@ a.btn-icon-only
 {
     padding: 1rem 0;
 }
+
+.card-profile .card-profile-stats
+{
+    padding: 1rem 0;
+}
+
 .profile-page .card-profile .card-profile-stats > div
 {
     margin-right: 1rem;
@@ -14806,10 +14860,25 @@ a.btn-icon-only
 
     text-align: center;
 }
+
+.card-profile .card-profile-stats > div
+{
+    margin-right: 1rem;
+    padding: .875rem; 
+
+    text-align: center;
+}
+
 .profile-page .card-profile .card-profile-stats > div:last-child
 {
     margin-right: 0;
 }
+
+.card-profile .card-profile-stats > div:last-child
+{
+    margin-right: 0;
+}
+
 .profile-page .card-profile .card-profile-stats > div .heading
 {
     font-size: 1.1rem;
@@ -14817,19 +14886,47 @@ a.btn-icon-only
 
     display: block;
 }
+
+.card-profile .card-profile-stats > div .heading
+{
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    display: block;
+}
+
 .profile-page .card-profile .card-profile-stats > div .description
 {
     font-size: .875rem;
 
     color: #adb5bd;
 }
+
+.card-profile .card-profile-stats > div .description
+{
+    font-size: .875rem;
+
+    color: #adb5bd;
+}
+
 .profile-page .card-profile .card-profile-actions
 {
     padding: .875rem;
 }
+
+.card-profile .card-profile-actions
+{
+    padding: .875rem;
+}
+
 @media (max-width: 575.98px)
 {
     .profile-page .card-profile .card-profile-actions
+    {
+        margin-top: 110px;
+    }
+
+    .card-profile .card-profile-actions
     {
         margin-top: 110px;
     }
@@ -14837,6 +14934,11 @@ a.btn-icon-only
 @media (min-width: 576px) and (max-width: 991.98px)
 {
     .profile-page .card-profile .card-profile-stats
+    {
+        margin-top: 30px;
+    }
+
+    .card-profile .card-profile-stats
     {
         margin-top: 30px;
     }
@@ -16087,20 +16189,20 @@ textarea[resize='horizontal']
 
     transition: all .15s ease; 
 
-    color: #5e72e4;
+    color: #2D8CE9;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 .nav-pills .nav-link:hover
 {
-    color: #485fe0;
+    color: #89B8E7;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link
 {
     color: #fff;
-    background-color: #5e72e4;
+    background-color: #2D8CE9;
 }
 
 @media (max-width: 575.98px)
