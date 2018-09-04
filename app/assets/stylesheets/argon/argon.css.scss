@@ -7672,6 +7672,17 @@ button.close
     }
 }
 
+@media screen and (max-width: 1150px) 
+{
+    .carousel-indicators,
+    .carousel-control-next,
+    .carousel-control-prev 
+    {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
 .carousel-item-next,
 .carousel-item-prev
 {
@@ -18332,6 +18343,15 @@ article h5 + figure
 }
 
 .headroom--not-top
+{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    background-color: #1674CC !important;
+    box-shadow: 0 1px 10px rgba(130, 130, 134, .1);
+}
+
+.headroom--top
 {
     padding-top: .5rem;
     padding-bottom: .5rem;
